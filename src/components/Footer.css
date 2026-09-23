@@ -1,0 +1,570 @@
+:root {
+  --footer-primary: #32104f;
+  --footer-dark: #241039;
+  --footer-purple: #4a1a73;
+  --footer-gold: #d4af37;
+  --footer-white: #ffffff;
+  --footer-gray: #b9afc3;
+}
+
+
+/* =========================================
+   FOOTER CONTAINER
+========================================= */
+
+.footer-container {
+  width: 100%;
+  background: var(--footer-primary);
+  color: var(--footer-white);
+}
+
+
+/* =========================================
+   CTA BANNER
+========================================= */
+
+.footer-cta {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  padding: 42px 8%;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--footer-dark),
+      var(--footer-primary)
+    );
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -120px;
+  top: -140px;
+
+  border: 1px solid rgba(212, 175, 55, 0.2);
+
+  border-radius: 50%;
+}
+
+
+/* CTA LABEL */
+
+.cta-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 8px;
+
+  color: var(--footer-gold);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+.cta-label .line {
+  width: 22px;
+  height: 2px;
+
+  background: var(--footer-gold);
+}
+
+
+/* CTA TEXT */
+
+.cta-content h2 {
+  margin-bottom: 5px;
+
+  color: var(--footer-white);
+
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.cta-content p {
+  color: var(--footer-gray);
+
+  font-size: 0.9rem;
+}
+
+
+/* CTA BUTTON */
+
+.cta-button {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 13px 24px;
+
+  background: var(--footer-gold);
+  color: var(--footer-dark);
+
+  border-radius: 6px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+
+  white-space: nowrap;
+}
+
+.cta-button:hover {
+  background: var(--footer-white);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-main {
+  padding: 60px 8% 22px;
+
+  background: var(--footer-primary);
+}
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1.2fr
+    1.3fr
+    1.8fr;
+
+  gap: 45px;
+
+  margin-bottom: 45px;
+}
+
+
+/* =========================================
+   FOOTER HEADINGS
+========================================= */
+
+.footer-col h4 {
+  margin-bottom: 18px;
+
+  color: var(--footer-white);
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-col ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: var(--footer-gray);
+
+  font-size: 0.82rem;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-col ul li a:hover {
+  color: var(--footer-gold);
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand-logo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 16px;
+
+  color: var(--footer-white);
+
+  text-decoration: none;
+}
+
+.brand-logo img {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(212, 175, 55, 0.1);
+
+  border: 1px solid rgba(212, 175, 55, 0.35);
+
+  border-radius: 50%;
+
+  font-size: 1.25rem;
+}
+
+.logo-text h3 {
+  margin: 0;
+
+  color: var(--footer-white);
+
+  font-size: 1rem;
+
+  letter-spacing: 1.2px;
+
+  line-height: 1.1;
+}
+
+.logo-text span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: var(--footer-gold);
+
+  font-size: 0.58rem;
+
+  letter-spacing: 2px;
+}
+
+.brand-tagline {
+  max-width: 300px;
+
+  margin-bottom: 20px;
+
+  color: var(--footer-gray);
+
+  font-size: 0.82rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.social-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--footer-white);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+
+  font-size: 0.78rem;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+  color: var(--footer-dark);
+
+  background: var(--footer-gold);
+
+  border-color: var(--footer-gold);
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-col ul li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  color: var(--footer-gray);
+
+  font-size: 0.82rem;
+
+  line-height: 1.5;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+
+  margin-top: 3px;
+
+  color: var(--footer-gold);
+
+  font-size: 0.8rem;
+}
+
+.contact-col ul li a {
+  color: var(--footer-gray);
+
+  text-decoration: none;
+}
+
+.contact-col ul li a:hover {
+  color: var(--footer-gold);
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.newsletter-col p {
+  margin-bottom: 14px;
+
+  color: var(--footer-gray);
+
+  font-size: 0.82rem;
+
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+
+  align-items: center;
+
+  padding: 4px 5px 4px 14px;
+
+  background: var(--footer-dark);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 6px;
+}
+
+.newsletter-form input {
+  width: 100%;
+
+  min-width: 0;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  color: var(--footer-white);
+
+  font-size: 0.78rem;
+}
+
+.newsletter-form input::placeholder {
+  color: #81758d;
+}
+
+.newsletter-form button {
+  width: 32px;
+  height: 32px;
+
+  min-width: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: var(--footer-gold);
+
+  color: var(--footer-dark);
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.newsletter-form button:hover {
+  background: var(--footer-white);
+
+  transform: translateX(2px);
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: var(--footer-gray);
+
+  font-size: 0.75rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.legal-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.legal-links a {
+  color: var(--footer-gray);
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.legal-links a:hover {
+  color: var(--footer-gold);
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .brand-col {
+    grid-column: span 3;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 40px 6%;
+  }
+
+  .footer-main {
+    padding: 50px 6% 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px 25px;
+  }
+
+  .brand-col {
+    grid-column: span 2;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-col {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 12px;
+  }
+
+  .legal-links {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+}
