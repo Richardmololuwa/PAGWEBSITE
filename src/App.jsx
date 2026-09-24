@@ -4,11 +4,11 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./Pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
 import Destinations from "./Pages/Destinations";
-import HowItWorks from "./pages/HowItWorks";
-import Contact from "./pages/Contact";
+import HowItWorks from "./Pages/HowItWorks";
+import Contact from "./Pages/Contact";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 function App() {
