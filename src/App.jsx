@@ -7,7 +7,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Destinations from "./Pages/Destinations";
-import HowItWorks from "./Pages/HowItWorks";
+import HowItWorks from "./Pages/HowitWorks";
 import Contact from "./Pages/Contact";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
